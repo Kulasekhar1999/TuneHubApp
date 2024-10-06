@@ -1,0 +1,54 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image:url("https://www.pixelstalk.net/wp-content/uploads/2016/05/Black-guitar-music-hd-wallpapers-background.jpg");
+    color: #333;
+    background-repeat:no-repeat;
+    background-size:cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+    border-radius: 5px;
+    background-position: center;
+}
+
+.container {
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #3498db;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+}
+p:hover{
+	color:crimson;
+}
+.buy-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #2980b9;
+}
+fieldset {
+	border-radius: 10px;
+	box-shadow: 2px 2px 9px red;
+}

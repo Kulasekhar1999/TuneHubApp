@@ -1,0 +1,114 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	border: 3px solid black;
+	border-radius: 10px;
+	background-image:
+		url(https://img.freepik.com/free-vector/music-notes-with-sound-wave-equalizer-frequency-background_1017-31225.jpg?w=1060&t=st=1708862733~exp=1708863333~hmac=304a1ab7f19e14bdcebca83b0b78c5a1d025ef96b53988423977721f73db4ae9);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: left;
+	font-family: "Roboto Mono", monospace;
+	font-style: italic;
+	font-size: large;
+	color: white;
+}
+td:hover{
+	color:red;
+}
+th {
+	background-color: black;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	color: green;
+	font-size: x-large;
+}
+
+td:first-child, th:first-child {
+	max-width: 70px;
+}
+
+td:nth-child(2), th:nth-child(2) {
+	max-width: 70px;
+}
+
+td:nth-child(3), th:nth-child(3) {
+	max-width: 50px; /* Adjust the width as needed for the genre column */
+}
+
+td:last-child, th:last-child {
+	max-width: 200px;
+}
+
+tbody tr:nth-child(even) {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+audio {
+	width: 100%;
+	background-color: grey;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+}
+
+audio:hover {
+	background-color: white;
+}
+
+audio::-webkit-media-controls-panel {
+	background-color: grey;
+	border-radius: 5px;
+}
+
+/* Play Button Hover Effect */
+audio::-webkit-media-controls-play-button:hover {
+	background-color: skyblue;
+}
+
+/* Mute Button Hover Effect */
+audio::-webkit-media-controls-mute-button:hover {
+	background-color: skyblue;
+}
+
+audio::-webkit-media-controls-play-button, audio::-webkit-media-controls-volume-slider-thumb,
+	audio::-webkit-media-controls-mute-button {
+	background-color: white;
+	border-radius: 8px;
+}
+
+/* Timer */
+audio::-webkit-media-controls-current-time-display, audio::-webkit-media-controls-time-remaining-display
+	{
+	color: black;
+}
+
+/* Progress Bar */
+audio::-webkit-media-controls-progress-bar {
+	background-color: #3498db;
+}
+
+/* Volume Controls */
+audio::-webkit-media-controls-mute-button, audio::-webkit-media-controls-volume-slider
+	{
+	background-color: white;
+}
+
+audio::-webkit-media-controls-volume-slider-thumb {
+	background-color: white;
+}
+
+/* Full-Screen Button */
+audio::-webkit-media-controls-fullscreen-button {
+	background-color: #3498db;
+}

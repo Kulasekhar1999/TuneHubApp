@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Music Page</title>
+<link rel="stylesheet" type="text/css" th:href="@{newsong.css}">
+</head>
+<body>
+<fieldset>
+<h2>Add Songs Here...</h2>
+<form action="addsong" method="post">
+<label> Song Name :</label>
+<input type="text" name="name" placeholder="enter song name" required><br><br>
+<label>Artist Name :</label>
+<input type="text"  name="artist" placeholder="enter artist name" required><br><br>
+<label>Genre :</label>
+<input type="text" name="genre" placeholder="enter genre name" required><br><br>
+<label> Link :</label>
+<input type="text" name="link" placeholder="enter link here" required><br><br>
+<input type="submit">
+</form>
+</fieldset>
+
+</body>
+</html>

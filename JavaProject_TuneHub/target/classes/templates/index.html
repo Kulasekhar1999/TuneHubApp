@@ -1,0 +1,51 @@
+<style>
+@import
+	url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap")
+	;
+</style>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Index Page</title>
+<link rel="stylesheet" type="text/css" th:href="@{/index.css}">
+</head>
+<body>
+	<fieldset style="border-radius: 20px 20px 20px 20px" class="family">
+		<h3>
+			<b>Login to Tunehub</b>
+		</h3>
+		<form class="form" action="validate" method="post">
+			<div class="flex-column">
+				<label><b>Email</b> </label>
+			</div>
+			<div class="inputForm">
+				<svg height="20" viewBox="0 0 32 32" width="20"
+					xmlns="http://www.w3.org/2000/svg"></svg>
+				<input type="text" class="input" placeholder="Enter your Email"
+					required name="email" />
+			</div>
+
+			<div class="flex-column">
+				<label><b>Password</b> </label>
+			</div>
+			<div class="inputForm">
+				<svg height="20" viewBox="-64 0 512 512" width="20"
+					xmlns="http://www.w3.org/2000/svg"></svg>
+				<input type="password" class="input"
+					placeholder="Enter your Password" required name="password" />
+				<svg viewBox="0 0 576 512" height="1em"
+					xmlns="http://www.w3.org/2000/svg"></svg>
+			</div>
+
+			<div class="flex-row">
+				<span class="span"></span>
+			</div>
+			<button class="button-submit">Sign In</button>
+			<p class="p">
+				Don't have an account? <span class="span"><a
+					href="registration">Sign Up</a></span>
+			</p>
+		</form>
+	</fieldset>
+</body>
+</html>
